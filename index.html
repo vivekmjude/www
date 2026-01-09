@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vivek m. jude</title>
+    <meta
+      name="description"
+      content="Vivek M. Jude — Software Engineer in Amsterdam."
+    />
+
+    <link rel="canonical" href="https://vivek.ooo/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="vivek.ooo" />
+    <meta property="og:title" content="vivek m. jude" />
+    <meta property="og:description" content="Software Engineer in Amsterdam." />
+    <meta property="og:url" content="https://vivek.ooo/" />
+    <meta property="og:image" content="https://vivek.ooo/assets/profile.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="vivek m. jude" />
+    <meta
+      name="twitter:description"
+      content="Software Engineer in Amsterdam."
+    />
+    <meta name="twitter:image" content="https://vivek.ooo/assets/profile.png" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cstyle%3Etext{font-family:monospace;font-weight:700;fill:%23000}%3C/style%3E%3Crect width='100' height='100' fill='%23fff'/%3E%3Ctext x='20' y='60' text-anchor='start' font-size='60'%3EV%3C/text%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Malayalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--
+      ╔═══════════════════════════════════════╗
+      ║  thanks for looking under the hood.   ║
+      ║  built with vanilla html/css/js.      ║
+      ╚═══════════════════════════════════════╝
+    -->
+    <header>
+      <img src="assets/logo.png" alt="Logo" class="corner-logo" />
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo mono">~/vivek $</a>
+          <nav class="mono" aria-label="primary">
+            <a href="#about">about</a>
+            <a href="#work">work</a>
+            <a href="#education">education</a>
+            <!-- commented out for now -->
+            <!-- <a href="/resume">resume</a> -->
+            <a href="#contact">contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <a class="skip-link mono" href="#main">skip to content</a>
+
+    <main class="container" id="main" tabindex="-1">
+      <!-- Hero -->
+      <section class="hero visible">
+        <pre
+          class="code-block"
+        ><code><span class="comment">#!/usr/bin/env python3</span>
+
+<span class="string">"""software engineer.
+ai/ml systems.
+amsterdam."""</span>
+
+<span class="keyword">class</span> Engineer:
+    <span class="keyword">def</span> __init__(self):
+        self.current = <span class="string">"crunchr"</span>
+        self.location = <span class="string">"amsterdam"</span>
+        self.expertise = [
+            <span class="string">"ai/ml"</span>,
+            <span class="string">"full-stack"</span>,
+            <span class="string">"product"</span>,
+        ]
+        self.also = <span class="string">"musician"</span>
+
+<span class="comment scroll-hint"># scroll to continue</span></code></pre>
+      </section>
+
+      <div class="philosophy serif">
+        Building systems that outlast hype.<br />
+        <em>Too many magicians in AI. I'm a plumber.</em><br />
+        I build for the second click, not the first&nbsp;impression.
+      </div>
+
+      <!-- About -->
+      <section id="about" class="about-section">
+        <div class="section-label mono"># about</div>
+
+        <!-- used https://doodad.dev/dither-me-this/ commodore 64 theme -->
+        <img
+          src="./assets/profile.png"
+          alt="Portrait of Vivek"
+          class="profile-image"
+          loading="lazy"
+          decoding="async"
+        />
+
+        <div class="about-content mono">
+          <p>
+            engineer with <span id="yoe">6+</span> years shipping software.
+            currently building ai features at crunchr in amsterdam. msc data
+            science from cardiff university. ex-amazon, ex-carestack.
+          </p>
+
+          <div class="quote">
+            maintaining the critical human touch to improve lives through
+            responsible code.
+          </div>
+
+          <div class="meta-list">
+            <span class="meta-label">work focus:</span>
+            <span
+              >full-stack development, ai systems, cloud infrastructure</span
+            >
+
+            <span class="meta-label">approach:</span>
+            <span
+              >build reusable foundations, collaborate openly, ship
+              iteratively</span
+            >
+            <span class="meta-label">certified:</span>
+            <span
+              >ai-900 (azure ai fundamentals), fine-tuning for llms (ibm)
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Work -->
+      <section id="work" class="work-section">
+        <div class="section-label mono"># work</div>
+        <div class="terminal" id="work-terminal">
+          <div class="terminal-header">
+            <div
+              class="terminal-control close"
+              aria-label="Close terminal"
+            ></div>
+            <div class="terminal-control" aria-label="Minimize terminal"></div>
+            <div class="terminal-control" aria-label="Maximize terminal"></div>
+          </div>
+          <div class="terminal-body">
+            <span class="comment">$ </span><span class="keyword">git</span> log
+            --author=<span class="string">"vivek"</span> --pretty=<span
+              class="string"
+              >"%ad %s"</span
+            >
+            --date=short
+          </div>
+        </div>
+
+        <div style="margin-top: calc(var(--spacing) * 3); position: relative">
+          <div class="timeline-container">
+            <div class="timeline-item">
+              <div class="timeline-period">
+                dec 2022-now (<span id="crunchr-duration">3yr 2mo</span>)
+              </div>
+              <div class="timeline-title">software engineer</div>
+              <div class="timeline-org">crunchr, amsterdam</div>
+              <!-- <div class="timeline-detail">
+                analytics ai assistant -> 90% user retention, built reusable
+                framework used across the product
+              </div> -->
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">jun 2021-sep 2021</div>
+              <div class="timeline-title">devops engineer</div>
+              <div class="timeline-org">amazon, hyderabad</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">jun 2018-jun 2021</div>
+              <div class="timeline-title">
+                software development engineer - ii
+              </div>
+              <div class="timeline-org">carestack, thiruvananthapuram</div>
+            </div>
+          </div>
+        </div>
+
+        <p
+          class="mono"
+          style="
+            margin-top: calc(var(--spacing) * 2);
+            font-size: 0.875rem;
+            color: var(--gray-mid);
+          "
+        >
+          <span class="comment"
+            ># detailed work history available in resume</span
+          >
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Education -->
+      <section id="education" class="education-section">
+        <div class="section-label mono"># education</div>
+
+        <div class="education-item">
+          <div class="education-institution">
+            cardiff university / prifysgol caerdydd
+          </div>
+          <div class="education-degree">
+            master of science - data science and analytics
+          </div>
+          <div class="education-period">
+            cardiff, united kingdom · sep 2021 - oct 2022
+          </div>
+          <div class="education-meta">
+            <span class="education-distinction">distinction</span> · a cappella
+            society · cardiff award
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="education-institution">university of kerala</div>
+          <div class="education-degree">
+            bachelor of technology - computer science and engineering
+          </div>
+          <div class="education-period">
+            thiruvananthapuram, kerala, india · jun 2014 - jun 2018
+          </div>
+          <div class="education-meta" style="white-space: nowrap">
+            <span class="education-distinction">first class</span>
+            · college choir · kerala youth festival winner (2016-18)
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Contact -->
+      <section id="contact" class="contact-section">
+        <div class="section-label mono"># contact</div>
+
+        <div class="contact-card">
+          <div class="contact-grid mono">
+            <div class="contact-item">
+              <span class="contact-label">email:</span>
+              <a href="mailto:shout@vivek.ooo">shout@vivek.ooo</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">linkedin:</span>
+              <a
+                href="https://www.linkedin.com/in/vivekmjude/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                >/in/vivekmjude</a
+              >
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">github:</span>
+              <a
+                href="https://github.com/vivekmjude"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                >/vivekmjude</a
+              >
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">music:</span>
+              <span>
+                <a
+                  href="https://open.spotify.com/artist/4010Dpwowi7KT6n2PeOOnW?si=5nDgE0uiTp2BXsrdelewtg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >spotify</a
+                >
+                <span class="contact-separator"> | </span>
+                <a
+                  href="https://soundcloud.com/vivek-m-jude"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >soundcloud</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <span class="footer-origin serif"
+          >capital hopping:
+          <span class="footnote-trigger">thiruvananthapuram</span> -> cardiff ->
+          amsterdam<span class="footnote"
+            ><span class="malayalam-serif">നാട് വിട്ടാലും നാട് വിടില്ല</span> —
+            you may leave home, but home never leaves you.</span
+          ></span
+        >
+        <span class="serif">© <span id="year"></span> Vivek M. Jude</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

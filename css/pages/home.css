@@ -1,0 +1,71 @@
+/* === HOME PAGE === */
+
+/* Hero Section */
+.hero {
+  padding-top: calc(var(--spacing) * 6);
+  padding-bottom: calc(var(--spacing) * 6);
+  margin-right: 2%;
+}
+
+.philosophy {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  line-height: 1.75;
+  text-align: center;
+  margin: calc(var(--spacing) * 6) auto;
+  padding: calc(var(--spacing) * 4) calc(var(--spacing) * 2);
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  max-width: 1200px;
+}
+
+.philosophy em {
+  font-style: italic;
+  font-size: 2.1rem;
+}
+
+/* About Section */
+.about-section {
+  margin-left: 3%;
+}
+
+.about-content {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.about-content p {
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+/* Work Section */
+.work-section {
+  margin-right: 5%;
+}
+
+/* Education Section */
+.education-section {
+  margin-left: 3%;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-left: 2%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .philosophy {
+    font-size: 1.5rem;
+  }
+
+  .hero,
+  .about-section,
+  .work-section,
+  .education-section,
+  .contact-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
