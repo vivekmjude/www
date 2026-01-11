@@ -30,6 +30,7 @@
 
     const routes = {
       "/": "index.html",
+      "/imprint": "imprint.html",
       "/resume": "resume.html",
     };
 

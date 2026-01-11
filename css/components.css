@@ -5,7 +5,7 @@
   background: #f2f2f2;
   border: 1px solid var(--black);
   padding: calc(var(--spacing) * 2);
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   line-height: 1.6;
   overflow-x: auto;
   white-space: pre;
@@ -68,7 +68,7 @@
 
 .terminal-body {
   padding: calc(var(--spacing) * 2);
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   line-height: 1.6;
   overflow-x: auto;
   text-align: left !important;
@@ -148,25 +148,25 @@
 }
 
 .timeline-period {
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   color: var(--gray-dark);
   margin-bottom: calc(var(--spacing) / 4);
 }
 
 .timeline-title {
-  font-size: 1rem;
+  font-size: var(--text-base);
   font-weight: 700;
   margin-bottom: calc(var(--spacing) / 4);
 }
 
 .timeline-org {
   color: var(--gray-mid);
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   margin-bottom: calc(var(--spacing) / 2);
 }
 
 .timeline-detail {
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   color: var(--gray-dark);
   line-height: 1.6;
   text-align: justify;
@@ -183,24 +183,24 @@
 }
 
 .education-institution {
-  font-size: 1rem;
+  font-size: var(--text-base);
   font-weight: 700;
   margin-bottom: calc(var(--spacing) / 2);
 }
 
 .education-degree {
-  font-size: 0.9375rem;
+  font-size: var(--text-base);
   margin-bottom: calc(var(--spacing) / 2);
 }
 
 .education-period {
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   color: var(--gray-mid);
   margin-bottom: calc(var(--spacing) / 4);
 }
 
 .education-meta {
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   color: var(--gray-dark);
   line-height: 1.6;
   max-width: 80%;
@@ -219,7 +219,7 @@
   border: 0.75px solid var(--black);
   padding: calc(var(--spacing) * 1.5);
   margin: calc(var(--spacing) * 3) 0;
-  max-width: 400px;
+  max-width: 25rem;
   transform: rotate(0.25deg);
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25), 8px 8px 16px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
@@ -236,35 +236,37 @@
 
 .contact-card .contact-grid {
   margin-top: 0;
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   gap: calc(var(--spacing) * 0.5);
 }
 
 .contact-card .contact-item {
-  grid-template-columns: 90px 1fr;
+  grid-template-columns: 5.625rem 1fr;
   gap: calc(var(--spacing) * 0.5);
 }
 
 .contact-grid {
   display: grid;
   gap: var(--spacing);
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   margin-top: calc(var(--spacing) * 2);
 }
 
 .contact-item {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 7.5rem 1fr;
   gap: var(--spacing);
 }
 
 .contact-label {
   color: var(--gray-mid);
   font-family: var(--serif);
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
 }
 
-.contact-item a {
+.contact-item a,
+.contact-item a:link,
+.contact-item a:visited {
   color: var(--black);
   text-decoration: none;
   position: relative;
@@ -283,7 +285,8 @@
   transition: width 0.2s ease;
 }
 
-.contact-item a:hover::after {
+.contact-item a:hover::after,
+.contact-item a:focus::after {
   width: 100%;
 }
 
@@ -294,8 +297,8 @@
 
 /* Profile Image */
 .profile-image {
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   float: right;
   margin: 0 0 calc(var(--spacing) * 2) calc(var(--spacing) * 2);
   border: none;
@@ -311,7 +314,7 @@
 /* Quote */
 .quote {
   font-family: var(--serif);
-  font-size: 1.25rem;
+  font-size: var(--text-lg);
   font-style: italic;
   line-height: 1.5;
   margin: calc(var(--spacing) * 3) 0;
@@ -325,7 +328,7 @@
   grid-template-columns: auto 1fr;
   gap: var(--spacing);
   margin-top: calc(var(--spacing) * 2);
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
 }
 
 .meta-label {
@@ -347,8 +350,8 @@
 
   .profile-image {
     float: right;
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     margin: calc(var(--spacing) / 2) 0 calc(var(--spacing)) calc(var(--spacing));
     transform: rotate(-1.5deg);
   }

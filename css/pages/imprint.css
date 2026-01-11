@@ -1,0 +1,57 @@
+/* Imprint Page Styles */
+
+.imprint-section {
+  margin: calc(var(--spacing) * 8) auto;
+  max-width: var(--max-width);
+}
+
+.imprint-content {
+  font-size: var(--text-xl);
+  line-height: 1.6;
+  margin-top: calc(var(--spacing) * 3);
+  text-align: justify;
+}
+
+.imprint-content p {
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.imprint-content p:last-child {
+  margin-top: calc(var(--spacing) * 3);
+  text-align: right;
+}
+
+.imprint-content a,
+.imprint-content a:link,
+.imprint-content a:visited {
+  color: var(--black);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.imprint-content a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--black);
+  transition: width 0.2s ease;
+}
+
+.imprint-content a:hover::after,
+.imprint-content a:focus::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .imprint-section {
+    margin: calc(var(--spacing) * 4) auto;
+  }
+
+  .imprint-content {
+    font-size: var(--text-xl);
+  }
+}
