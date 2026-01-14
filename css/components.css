@@ -335,6 +335,29 @@
   color: var(--gray-mid);
 }
 
+/* Subtle Link (animated underline) */
+.subtle-link {
+  text-decoration: none;
+  position: relative;
+  display: inline;
+}
+
+.subtle-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.2s ease;
+}
+
+.subtle-link:hover::after,
+.subtle-link:focus::after {
+  width: 100%;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .code-block {

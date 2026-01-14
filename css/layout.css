@@ -92,6 +92,22 @@ nav a.active {
   font-weight: 700;
 }
 
+/* Meta link (easter egg style) */
+nav a.meta-link {
+  opacity: 0.5;
+  font-size: 0.875em;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+nav a.meta-link:hover {
+  opacity: 1;
+  color: var(--black);
+}
+
+nav a.meta-link.active {
+  opacity: 1;
+}
+
 /* === SECTIONS === */
 section {
   padding: calc(var(--spacing) * 4) 0;
@@ -162,6 +178,13 @@ footer {
 }
 
 /* === RESPONSIVE === */
+@media (max-width: 900px) {
+  /* On smaller screens, ensure header container has enough left padding for corner logo */
+  header .container {
+    padding-left: calc(4rem + 2rem); /* Corner logo (4rem) + spacing */
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: var(--text-sm);
@@ -173,6 +196,10 @@ footer {
     left: 1rem;
   }
 
+  header .container {
+    padding-left: calc(3rem + 1.5rem); /* Smaller logo (3rem) + spacing */
+  }
+
   .logo {
     display: none;
   }
@@ -181,7 +208,6 @@ footer {
     flex-direction: column;
     gap: var(--spacing);
     align-items: flex-start;
-    padding-left: calc(3rem + var(--spacing));
   }
 
   nav {

@@ -1,8 +1,15 @@
 /* Imprint Page Styles */
 
+main#main:has(.imprint-section) {
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  align-items: center;
+}
+
 .imprint-section {
-  margin: calc(var(--spacing) * 8) auto;
+  margin: 0 auto;
   max-width: var(--max-width);
+  width: 100%;
 }
 
 .imprint-content {
@@ -47,8 +54,12 @@
 }
 
 @media (max-width: 768px) {
+  main#main:has(.imprint-section) {
+    min-height: calc(100vh - 4rem);
+  }
+
   .imprint-section {
-    margin: calc(var(--spacing) * 4) auto;
+    margin: 0 auto;
   }
 
   .imprint-content {
