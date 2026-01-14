@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&amp;display=swap');
+      text { font-family: "EB Garamond", serif; font-weight: 700; fill: #222; }
+    </style>
+  </defs>
+  <rect width="192" height="192" rx="16" fill="#b8a888"/>
+  <rect x="12" y="12" width="168" height="152" rx="12" fill="#e8dcc4"/>
+  <text x="72" y="112" text-anchor="middle" font-size="128">V</text>
+</svg>
